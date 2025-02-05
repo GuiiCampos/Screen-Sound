@@ -31,17 +31,21 @@ void ExibirOpcoesMenu() {
 
         Console.Write("\nAguardando: ");
 
-        int opcao = int.Parse(Console.ReadLine()!);
+        if (int.TryParse(Console.ReadLine(), out int opcao)) {
 
-        switch (opcao) {
-            case 1: RegistraBanda(); break;
-            case 2: ShowAllBandas(); break;
-            case 3: AvaliarBanda(); break;
-            case 4: Console.WriteLine("4"); break;//MediaDasBandas(); break;
-            case 0: Console.Write("Programa Encerrado"); return;
-            default:    
-                Console.Write("Opção invalida");
-                break;
+            switch (opcao) {
+                case 1: RegistraBanda(); break;
+                case 2: ShowAllBandas(); break;
+                case 3: AvaliarBanda(); break;
+                case 4: MediaDasBandas(); break;
+                case 0: Console.Write("Programa Encerrado"); return;
+                default:
+                    Console.Write("Opção invalida");
+                    break;
+            }
+        } else {
+            Console.WriteLine("Entrada inválida! Digite um número.");
+
         }
     }
 }
@@ -110,7 +114,7 @@ void AvaliarBanda() {
 
     if (allBandas.TryGetValue(bandaAAvaliar, out var notas)) {
         Console.Write($"Qual nota a banda {bandaAAvaliar} merece?: ");
-        
+
         if (int.TryParse(Console.ReadLine(), out int nota) && nota >= 0 && nota <= 10) {
             notas.Add(nota);
             Console.WriteLine("\nNota registrada!");
@@ -122,6 +126,21 @@ void AvaliarBanda() {
     }
 
     Thread.Sleep(2000);
+}
+
+void MediaDasBandas() {
+    Console.Clear();
+
+    if (ListaVazia()) return;
+
+    ExibirTitleDaOpcao("Média das bandas");
+
+    foreach (var banda in allBandas) {
+        double media = banda.Value.Any() ? banda.Value.Average() : 0;
+        Console.WriteLine($"\nA banda {banda.Key} possui a média de: {media:F2}");
+    }
+
+    EsperarTecla();
 }
 
 ExibirOpcoesMenu();
