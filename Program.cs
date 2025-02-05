@@ -36,7 +36,7 @@ void ExibirOpcoesMenu() {
         switch (opcao) {
             case 1: RegistraBanda(); break;
             case 2: ShowAllBandas(); break;
-            case 3: Console.WriteLine("3"); break;//AvaliarBanda(); break;
+            case 3: AvaliarBanda(); break;
             case 4: Console.WriteLine("4"); break;//MediaDasBandas(); break;
             case 0: Console.Write("Programa Encerrado"); return;
             default:    
@@ -96,6 +96,32 @@ void ShowAllBandas() {
     }
 
     EsperarTecla();
+}
+
+void AvaliarBanda() {
+    Console.Clear();
+
+    if (ListaVazia()) return;
+
+    ExibirTitleDaOpcao("Avaliação de bandas");
+
+    Console.Write("Qual banda deseja avaliar?: ");
+    string bandaAAvaliar = Console.ReadLine()!;
+
+    if (allBandas.TryGetValue(bandaAAvaliar, out var notas)) {
+        Console.Write($"Qual nota a banda {bandaAAvaliar} merece?: ");
+        
+        if (int.TryParse(Console.ReadLine(), out int nota) && nota >= 0 && nota <= 10) {
+            notas.Add(nota);
+            Console.WriteLine("\nNota registrada!");
+        } else {
+            Console.WriteLine("Nota inválida! Insira um valor entre 0 e 10.");
+        }
+    } else {
+        Console.WriteLine($"\nA banda {bandaAAvaliar} não foi encontrada!");
+    }
+
+    Thread.Sleep(2000);
 }
 
 ExibirOpcoesMenu();
