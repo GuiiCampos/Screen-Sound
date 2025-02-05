@@ -35,7 +35,7 @@ void ExibirOpcoesMenu() {
 
         switch (opcao) {
             case 1: RegistraBanda(); break;
-            case 2: Console.WriteLine("2"); break;//ShowAllBandas(); break;
+            case 2: ShowAllBandas(); break;
             case 3: Console.WriteLine("3"); break;//AvaliarBanda(); break;
             case 4: Console.WriteLine("4"); break;//MediaDasBandas(); break;
             case 0: Console.Write("Programa Encerrado"); return;
@@ -63,6 +63,7 @@ Boolean ListaVazia() {
 
 void EsperarTecla() {
     Console.WriteLine("\nPressione qualquer tecla para voltar ao menu");
+    Console.ReadKey();
 }
 
 void RegistraBanda() {
@@ -80,6 +81,21 @@ void RegistraBanda() {
     }
 
     Thread.Sleep(2000);
+}
+
+void ShowAllBandas() {
+    Console.Clear();
+
+    if (ListaVazia()) return;
+
+    ExibirTitleDaOpcao("Exibindo todas as bandas");
+
+    int i = 1;
+    foreach (string banda in allBandas.Keys) {
+        Console.WriteLine($"{i++}° banda: {banda}");
+    }
+
+    EsperarTecla();
 }
 
 ExibirOpcoesMenu();
