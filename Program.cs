@@ -16,13 +16,6 @@ void MostrarLogo() {
     Thread.Sleep(1000);
 }
 
-void ExibirTitleDaOpcao(string titulo){
-    string asteriscos = new string('*', titulo.Length);
-    Console.WriteLine(asteriscos);
-    Console.WriteLine(titulo);
-    Console.WriteLine(asteriscos + "\n");
-}
-
 void ExibirOpcoesMenu() {
     while (true) {
         Console.Clear();
@@ -51,6 +44,25 @@ void ExibirOpcoesMenu() {
                 break;
         }
     }
+}
+void ExibirTitleDaOpcao(string titulo) {
+    string asteriscos = new string('*', titulo.Length);
+    Console.WriteLine(asteriscos);
+    Console.WriteLine(titulo);
+    Console.WriteLine(asteriscos + "\n");
+}
+
+Boolean ListaVazia() {
+    if(allBandas.Count == 0) {
+        Console.WriteLine("Lista vazia, adicione alguma banda.");
+        Thread.Sleep(2000);
+        return true;
+    }
+    return false;
+}
+
+void EsperarTecla() {
+    Console.WriteLine("\nPressione qualquer tecla para voltar ao menu");
 }
 
 void RegistraBanda() {
