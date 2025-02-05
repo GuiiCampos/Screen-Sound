@@ -1,0 +1,15 @@
+C:\Users\guica\Downloads\Estudos\Cursos Ou Outros\Programação\C# e .NET\Projetos\Screen Sound\bin\Debug\net9.0\Screen Sound.exe
+C:\Users\guica\Downloads\Estudos\Cursos Ou Outros\Programação\C# e .NET\Projetos\Screen Sound\bin\Debug\net9.0\Screen Sound.deps.json
+C:\Users\guica\Downloads\Estudos\Cursos Ou Outros\Programação\C# e .NET\Projetos\Screen Sound\bin\Debug\net9.0\Screen Sound.runtimeconfig.json
+C:\Users\guica\Downloads\Estudos\Cursos Ou Outros\Programação\C# e .NET\Projetos\Screen Sound\bin\Debug\net9.0\Screen Sound.dll
+C:\Users\guica\Downloads\Estudos\Cursos Ou Outros\Programação\C# e .NET\Projetos\Screen Sound\bin\Debug\net9.0\Screen Sound.pdb
+C:\Users\guica\Downloads\Estudos\Cursos Ou Outros\Programação\C# e .NET\Projetos\Screen Sound\obj\Debug\net9.0\Screen Sound.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\guica\Downloads\Estudos\Cursos Ou Outros\Programação\C# e .NET\Projetos\Screen Sound\obj\Debug\net9.0\Screen Sound.AssemblyInfoInputs.cache
+C:\Users\guica\Downloads\Estudos\Cursos Ou Outros\Programação\C# e .NET\Projetos\Screen Sound\obj\Debug\net9.0\Screen Sound.AssemblyInfo.cs
+C:\Users\guica\Downloads\Estudos\Cursos Ou Outros\Programação\C# e .NET\Projetos\Screen Sound\obj\Debug\net9.0\Screen Sound.csproj.CoreCompileInputs.cache
+C:\Users\guica\Downloads\Estudos\Cursos Ou Outros\Programação\C# e .NET\Projetos\Screen Sound\obj\Debug\net9.0\Screen Sound.sourcelink.json
+C:\Users\guica\Downloads\Estudos\Cursos Ou Outros\Programação\C# e .NET\Projetos\Screen Sound\obj\Debug\net9.0\Screen Sound.dll
+C:\Users\guica\Downloads\Estudos\Cursos Ou Outros\Programação\C# e .NET\Projetos\Screen Sound\obj\Debug\net9.0\refint\Screen Sound.dll
+C:\Users\guica\Downloads\Estudos\Cursos Ou Outros\Programação\C# e .NET\Projetos\Screen Sound\obj\Debug\net9.0\Screen Sound.pdb
+C:\Users\guica\Downloads\Estudos\Cursos Ou Outros\Programação\C# e .NET\Projetos\Screen Sound\obj\Debug\net9.0\Screen Sound.genruntimeconfig.cache
+C:\Users\guica\Downloads\Estudos\Cursos Ou Outros\Programação\C# e .NET\Projetos\Screen Sound\obj\Debug\net9.0\ref\Screen Sound.dll
